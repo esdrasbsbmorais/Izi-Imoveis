@@ -1,0 +1,15 @@
+# Define o tratamento padrão de quebras de linha para auto
+# O Git irá tratar as quebras de linha de acordo com o que é definido em core.autocrlf
+* text=auto
+
+# Defina regras específicas para determinados tipos de arquivo se necessário
+
+# Trate os arquivos .sh sempre com quebras de linha LF
+*.sh text eol=lf
+
+# Trate os arquivos .bat sempre com quebras de linha CRLF
+*.bat text eol=crlf
+
+# Para arquivos binários, é bom desativar a conversão de quebras de linha
+*.png binary
+*.jpg binary
