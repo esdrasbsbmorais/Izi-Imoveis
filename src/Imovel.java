@@ -1,3 +1,4 @@
+
 public class Imovel {
     private String nome;
     private String tipo;

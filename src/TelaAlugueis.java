@@ -23,7 +23,7 @@ public class TelaAlugueis extends JFrame {
         JPanel headerPanel = new JPanel();
         headerPanel.setBackground(new Color(52, 152, 219)); // Cor de fundo
         headerPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // Margens
-        ImageIcon logoIcon = new ImageIcon("C:\\Java\\ProjetoJava\\resources\\imagens\\casa.png");
+        ImageIcon logoIcon = new ImageIcon("src/images/system/casa.png");
         JLabel logoLabel = new JLabel(logoIcon);
         headerPanel.add(logoLabel);
         add(headerPanel, BorderLayout.NORTH);
