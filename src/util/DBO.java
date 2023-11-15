@@ -18,4 +18,5 @@ public class DBO {
     public void conectar(Connection connection) throws SQLException {
         this.connection = connection;
     }
+
 }
