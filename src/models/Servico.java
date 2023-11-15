@@ -1,13 +1,14 @@
 package models;
 
-import java.io.Serial;
 
 public class Servico {
+
     // Atributos
-    protected Serial servico_id;
+    protected int servico_id;
     protected String servico_tipo;
     protected int imoveis_id;
     protected int pessoas_id;
+
 
     // Construtor vazio
     public Servico() {
@@ -19,6 +20,8 @@ public class Servico {
         this.imoveis_id = imoveis_id;
         this.pessoas_id = pessoas_id;
     }
+
+
     // Métodos Getters e Setters
     public String getServico_tipo() {
         return servico_tipo;
@@ -28,19 +31,16 @@ public class Servico {
         this.servico_tipo = servico_tipo;
     }
 
+    
     public int getImoveis_id() {
         return imoveis_id;
     }
 
-    public void setImoveis_id(int imoveis_id) {
-        this.imoveis_id = imoveis_id;
-    }
-
+   
     public int getPessoas_id() {
         return pessoas_id;
     }
 
-    public void setPessoas_id(int pessoas_id) {
-        this.pessoas_id = pessoas_id;
-    }
+    
+
 }
