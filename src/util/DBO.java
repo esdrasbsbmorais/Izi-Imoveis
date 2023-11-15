@@ -19,4 +19,17 @@ public class DBO {
         this.connection = connection;
     }
 
+    public void inserirPessoa(Pessoa pessoa) throws SQLException {
+      
+        String sql = "INSERT INTO Pessoa (pessoa_id, nome, senha) VALUES (?, ?, ?)";
+
+      
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setInt(1, pessoa.getPessoa_id());
+        preparedStatement.setString(2, pessoa.getNome());
+        preparedStatement.setString(3, pessoa.getSenha());
+        preparedStatement.executeUpdate();
+
+      
+    }
 }
