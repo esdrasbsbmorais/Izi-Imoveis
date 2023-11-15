@@ -1,8 +1,10 @@
 package models;
 
 public class PessoaServico extends Servico{
+    private int pessoaServicoID; 
     private int data;
     private float valor;
+
 
     // Construtor sem parâmetros
     public PessoaServico(){
@@ -21,7 +23,14 @@ public class PessoaServico extends Servico{
         this.valor = valor;
     }
 
-    // Métodos Getters e Setters
+
+    //Métodos Getters e Setters
+    
+    public int getPessoaServidoId(){
+        return this.pessoaServicoID; 
+    }
+    
+    
     public int getData() {
         return data;
     }
@@ -29,6 +38,7 @@ public class PessoaServico extends Servico{
     public void setData(int data) {
         this.data = data;
     }
+
 
     public float getValor() {
         return valor;

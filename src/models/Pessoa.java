@@ -10,14 +10,15 @@ public class Pessoa {
   private String senha;
   private boolean status;
 
+
   // Construtor vazio
   public Pessoa(){
     
   }
 
+
   // Construtor com parâmetros
-  public Pessoa(int pessoa_id, String nome, String telefone, String email, int dt_nasc, String senha, boolean status){
-    this.pessoa_id = pessoa_id;
+  public Pessoa(String nome, String telefone, String email, int dt_nasc, String senha, boolean status){
     this.nome = nome;
     this.telefone = telefone;
     this.email = email;
@@ -26,15 +27,14 @@ public class Pessoa {
     this.status = status;
   }
 
+
+  // Métodos Getters e Setters
+
   public int getPessoa_id() {
     return pessoa_id;
   }
 
-  public void setPessoa_id(int pessoa_id) {
-    this.pessoa_id = pessoa_id;
-  }
 
-  // Métodos Getters e Setters
   public String getNome() {
     return nome;
   }
